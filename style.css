@@ -1,0 +1,146 @@
+*
+{
+ 
+   padding: 0%;
+   margin: 0%;
+   box-sizing: content-box;
+   
+
+  
+}
+body
+{ background-image: url(./preparacion-cafe-espresso-maquina-cafe-ia-generativa_845977-2666.avif);
+    background-size: cover; /* Escala la imagen para cubrir toda la pantalla */
+    background-repeat: no-repeat;
+    background-position: center; /* Centra la imagen */
+    background-attachment: fixed; /* Permite que la imagen se mantenga fija al hacer scroll */
+}
+/* HEADAR */
+
+header
+{   display: flex;
+    flex-direction: row-reverse;
+    color: white;
+}
+.btn-menu
+{
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    background-color: rgb(0, 0, 0,0);
+    margin-right:1.5rem;
+
+}
+/* MAIN */
+
+main
+{   
+    
+    color: white;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 5rem; 
+    padding-bottom: 5rem;
+   
+
+}
+.nombre
+{
+    
+    font-weight: bold;
+}
+.img-perfil
+{
+    width: 200px;
+    border-radius: 50%;
+}
+
+.btn-enlaces-main {
+    background-color: white;
+    color: black;
+    width: 600px;
+    height: 60px;
+    border-radius: 25px;
+    font-weight: 800;
+    transition: background-color 0.3s ease;
+}
+.btn-enlaces-main:hover
+{
+    background-color: rgb(0, 0, 0,0);
+    border: 1px solid white;
+    color: white;
+}
+
+/* Media query para pantallas de 400px o menos */
+@media (max-width: 400px) {
+    .btn-enlaces-main {
+        width: 80%; /* Ajusta el ancho a un 80% de la pantalla */
+        height: 50px; /* Ajusta la altura para pantallas pequeñas */
+    }
+}
+/* footer */
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    color: white;
+    
+}
+
+.redes a {
+    color: white;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+.redes a:hover {
+    color: #0077b5; /* Cambia a un color de tu elección al pasar el mouse */
+}
+
+svg {
+    width: 30px;
+    height: 30px;
+    fill: currentColor;
+}
+
+/* div menu */
+
+/* Estilo del popup oculto por defecto */
+.popup {
+    position: fixed;
+    bottom: -100%; /* Oculto inicialmente fuera de la pantalla */
+   
+    width: 100%;
+    height: 90%;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    opacity: 0;
+    transition: bottom 0.5s ease, opacity 0.5s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Mostrar el popup */
+.popup.show {
+    bottom: 5%; /* Aparece desde la parte inferior */
+    opacity: 1;
+}
+
+/* Estilo del botón de cerrar */
+.popup button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 5px 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.no-scroll {
+    overflow: hidden;
+}
