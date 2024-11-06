@@ -10,10 +10,11 @@
 }
 body
 { background-image: url("./assets/cafe.avif");
-    background-size: cover; /* Escala la imagen para cubrir toda la pantalla */
+    background-size: cover; /* Escala la imagen para cubrir toda la pantalla   600px*/
     background-repeat: no-repeat;
     background-position: center; /* Centra la imagen */
-    background-attachment: fixed; /* Permite que la imagen se mantenga fija al hacer scroll */
+   background-attachment: fixed;  /* Permite que la imagen se mantenga fija al hacer scroll */
+   height: 100vh;
 }
 /* HEADAR */
 
