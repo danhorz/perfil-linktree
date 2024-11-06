@@ -61,7 +61,7 @@ main
 .btn-enlaces-main {
     background-color: white;
     color: black;
-    width: 600px;
+    width: 40%;
     height: 60px;
     border-radius: 25px;
     font-weight: 800;
@@ -119,7 +119,7 @@ POPUP
     position: fixed;
     bottom: -100%; /* Oculto inicialmente fuera de la pantalla */
    
-    width: 35%;
+    width: 50%;
     height: 90%;
     background-color: white;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
@@ -133,7 +133,7 @@ POPUP
     color: black;
     gap: 30px;
     padding-top: 1rem;
-    padding-bottom: 2rem;
+   padding-bottom: 5px;
 }
 
 
@@ -179,7 +179,15 @@ POPUP
     border-radius: 15px;
 }
 
-/* Media query para pantallas de 400px o menos */
+
+
+
+
+
+
+
+
+/* Media query para pantallas celular*/
 @media (max-width: 450px) {
     .btn-enlaces-main {
         width: 80%; /* Ajusta el ancho a un 80% de la pantalla */
@@ -193,6 +201,51 @@ POPUP
         width: 250px;
     }
 }
+
+ /* Estilos para otros */
+ @media (min-width: 451px) and (max-width: 599px) {
+    
+
+   
+    .btn-enlaces-main {
+        width: 80%; /* Ajusta el ancho a un 80% de la pantalla */
+        height: 50px; /* Ajusta la altura para pantallas pequeñas */
+    }
+    .popup {
+        width: 85%;
+    }
+    #img-project
+    {
+        width: 250px;
+    }
+}
+
+ /* Estilos para cualquier tablet */
+ @media (min-width: 600px) and (max-width: 1024px) {
+    
+
+   
+    .btn-enlaces-main {
+        width: 80%; /* Ajusta el ancho a un 80% de la pantalla */
+        height: 50px; /* Ajusta la altura para pantallas pequeñas */
+    }
+    .popup {
+        width: 80%;
+    }
+    #img-project
+    {
+        width: 250px;
+    }
+}
+
+
+
+
+
+
+
+
+
 /* contenedor puntos */
 .contenedor-puntos
 {
