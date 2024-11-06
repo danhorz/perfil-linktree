@@ -9,7 +9,7 @@
   
 }
 body
-{ background-image: url(./preparacion-cafe-espresso-maquina-cafe-ia-generativa_845977-2666.avif);
+{ background-image: url("./assets/cafe.avif");
     background-size: cover; /* Escala la imagen para cubrir toda la pantalla */
     background-repeat: no-repeat;
     background-position: center; /* Centra la imagen */
@@ -73,13 +73,7 @@ main
     color: white;
 }
 
-/* Media query para pantallas de 400px o menos */
-@media (max-width: 400px) {
-    .btn-enlaces-main {
-        width: 80%; /* Ajusta el ancho a un 80% de la pantalla */
-        height: 50px; /* Ajusta la altura para pantallas pequeñas */
-    }
-}
+
 /* footer */
 footer {
     display: flex;
@@ -106,14 +100,25 @@ svg {
     fill: currentColor;
 }
 
-/* div menu */
+/* 
+
+
+POPUP
+
+
+
+
+
+*/
+
+
 
 /* Estilo del popup oculto por defecto */
 .popup {
     position: fixed;
     bottom: -100%; /* Oculto inicialmente fuera de la pantalla */
    
-    width: 100%;
+    width: 35%;
     height: 90%;
     background-color: white;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
@@ -121,10 +126,17 @@ svg {
     opacity: 0;
     transition: bottom 0.5s ease, opacity 0.5s ease;
     display: flex;
-    justify-content: center;
+    
     align-items: center;
     flex-direction: column;
+    color: black;
+    gap: 30px;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
 }
+
+
+
 
 /* Mostrar el popup */
 .popup.show {
@@ -133,14 +145,124 @@ svg {
 }
 
 /* Estilo del botón de cerrar */
-.popup button {
+.popup .btn-cerrar{
+    background-color: white;
     position: absolute;
     top: 10px;
     right: 10px;
     padding: 5px 10px;
     font-size: 16px;
     cursor: pointer;
+    width: max-content;
+    border: none;
+    font-weight: 500;
+    border-radius: 8px;
+   
 }
+/* NO scroll en el main principal cuando se abra el div */
 .no-scroll {
     overflow: hidden;
 }
+
+.popup .btn-cerrar:hover
+{
+    background-color: #F3F3F1;
+    border-radius: 8px;
+  
+}
+
+/* imagen del div */
+#img-project
+{
+    width: 450px;
+    border-radius: 15px;
+}
+
+/* Media query para pantallas de 400px o menos */
+@media (max-width: 450px) {
+    .btn-enlaces-main {
+        width: 80%; /* Ajusta el ancho a un 80% de la pantalla */
+        height: 50px; /* Ajusta la altura para pantallas pequeñas */
+    }
+    .popup {
+        width: 100%;
+    }
+    #img-project
+    {
+        width: 250px;
+    }
+}
+/* contenedor puntos */
+.contenedor-puntos
+{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+/* puntos señalizadores de cambio de imagen */
+#punto2,#punto3,#punto1
+{
+    height: 10px;
+    width: 10px;
+    
+    border-radius: 50%;
+    border: 1px solid black;
+}
+/* carrousel contenedor */
+.carrosel
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    
+}
+#boton-izquierda-carrosel,#boton-derecha-carrosel
+{   background-color: white;
+    width: 30px;
+    height: 30px;
+    border: none;
+    font-weight: 700;
+    border-radius: 8px;
+}
+#boton-izquierda-carrosel:hover
+{
+    background-color: #F3F3F1;
+    border-radius: 8px;
+  
+}
+#boton-derecha-carrosel:hover
+{
+    background-color: #F3F3F1;
+    border-radius: 8px;
+  
+}
+#btn-comunitario,#btn-linktree,#btn-instrument
+{
+    background-color: black;
+    color: white;
+    width: 80%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-radius: 25px;
+    font-weight: 800;
+    transition: background-color 0.3s ease;
+}
+#btn-instrument:hover
+{
+    background-color: rgb(0, 0, 0,0);
+    border: 1px solid black;
+    color: black;
+}
+#btn-comunitario:hover
+{
+    background-color: rgb(0, 0, 0,0);
+    border: 1px solid black;
+    color: black;
+}
+#btn-linktree:hover
+{
+    background-color: rgb(0, 0, 0,0);
+    border: 1px solid black;
+    color: black;
+} 
